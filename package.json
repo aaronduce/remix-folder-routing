@@ -1,0 +1,48 @@
+{
+  "name": "remix-folder-routing",
+  "version": "0.1.6",
+  "homepage": "https://github.com/aaronduce/remix-folder-routing#readme",
+  "bugs": {
+    "url": "https://github.com/aaronduce/remix-folder-routing/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronduce/remix-folder-routing.git"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch",
+    "test": "console.log('No tests yet')"
+  },
+  "dependencies": {
+    "minimatch": "^7.4.3",
+    "@changesets/cli": "^2.26.1",
+    "@manypkg/get-packages": "^2.1.0",
+    "typescript": "^5.0.2"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.15.0",
+    "tsup": "^6.7.0",
+    "@tsconfig/node16": "^1.0.3",
+    "@types/node": "^18.15.11",
+    "prettier": "^2.8.7"
+  },
+  "peerDependencies": {
+    "@remix-run/dev": "^1.15.0 || ^2.0.0"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ]
+}
